@@ -1,0 +1,85 @@
+{
+  "stock": "TSLA",
+  "quarters": [
+    {
+      "quarter": "2023-Q4",
+      "revenue": 25167,
+      "gross_profit": 4540,
+      "net_income": 2064,
+      "operating_cash_flow": 4350,
+      "capex": 2346,
+      "total_equity": 65000,
+      "total_debt": 9200,
+      "cash_and_equivalents": 27000,
+      "diluted_shares": 3180,
+      "stock_price": 248,
+      "effective_tax_rate": 0.21,
+      "wacc": 9.5
+    },
+    {
+      "quarter": "2024-Q1",
+      "revenue": 21301,
+      "gross_profit": 3990,
+      "net_income": 1129,
+      "operating_cash_flow": 4240,
+      "capex": 2480,
+      "total_equity": 67300,
+      "total_debt": 9400,
+      "cash_and_equivalents": 29100,
+      "diluted_shares": 3190,
+      "stock_price": 175,
+      "effective_tax_rate": 0.21,
+      "wacc": 9.5
+    },
+    {
+      "quarter": "2024-Q2",
+      "revenue": 24927,
+      "gross_profit": 4650,
+      "net_income": 1480,
+      "operating_cash_flow": 3700,
+      "capex": 2300,
+      "total_equity": 68200,
+      "total_debt": 9600,
+      "cash_and_equivalents": 30000,
+      "diluted_shares": 3195,
+      "stock_price": 205,
+      "effective_tax_rate": 0.21,
+      "wacc": 9.5
+    },
+    {
+      "quarter": "2024-Q3",
+      "revenue": 23350,
+      "gross_profit": 4350,
+      "net_income": 1850,
+      "operating_cash_flow": 3900,
+      "capex": 2200,
+      "total_equity": 69000,
+      "total_debt": 9800,
+      "cash_and_equivalents": 30500,
+      "diluted_shares": 3200,
+      "stock_price": 225,
+      "effective_tax_rate": 0.21,
+      "wacc": 9.5
+    },
+    {
+      "quarter": "2024-Q4",
+      "revenue": 25167,
+      "gross_profit": 4800,
+      "net_income": 2064,
+      "operating_cash_flow": 4350,
+      "capex": 2346,
+      "total_equity": 69800,
+      "total_debt": 9900,
+      "cash_and_equivalents": 31000,
+      "diluted_shares": 3205,
+      "stock_price": 240,
+      "effective_tax_rate": 0.21,
+      "wacc": 9.5
+    }
+  ],
+  "data_sources": {
+    "financials": "Tesla 10-K / 10-Q",
+    "stock_price": "Yahoo Finance (quarter-end close)",
+    "wacc": "Gurufocus"
+  }
+}
