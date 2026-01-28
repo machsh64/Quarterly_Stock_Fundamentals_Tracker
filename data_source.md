@@ -26,7 +26,7 @@
 | revenue               | 	Income Statement           | 	Total Revenue (gurufocus: Income Statement -> Revenue)                           | 	季度值 |
 | gross_profit	         | Income Statement            | Gross Profit (gurufocus: Income Statement -> Gross Profit)                             | 季度值  |
 | net_income            | Income Statement            | Net Income (GAAP)	(gurufocus: Income Statement -> Net Income)                        | 季度值  |
-| operating_cash_flow	  | Cash Flow	                  | Net Cash Provided by Operating Activities (gurufocus: not_found) | 季度值  |
+| operating_cash_flow	  | Cash Flow	                  | Net Cash Provided by Operating Activities (gurufocus: Cashflow Statement -> Cash Flow From Operations) | 季度值  |
 | capex	                | Cash Flow	                  | Capital Expenditures	(gurufocus: Cashflow Statement -> Capital Expenditure)                     | 取正值  |
 | total_equity	         | Balance Sheet	              | Total Shareholders' Equity	(gurufocus: Balance Sheet -> Total Equity)               | 期末   |
 | total_debt	           | Balance Sheet	              | Short + Long-term Debt	(gurufocus: Balance Sheet -> Short + Long-term Debt)                   | 合并   |
