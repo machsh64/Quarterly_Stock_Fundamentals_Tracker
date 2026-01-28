@@ -13,7 +13,7 @@
       "cash_and_equivalents": 27000,
       "diluted_shares": 3180,
       "stock_price": 248,
-      "effective_tax_rate": 0.21,
+      "roic": 12.8,
       "wacc": 9.5
     },
     {
@@ -28,7 +28,7 @@
       "cash_and_equivalents": 29100,
       "diluted_shares": 3190,
       "stock_price": 175,
-      "effective_tax_rate": 0.21,
+      "roic": 12.8,
       "wacc": 9.5
     },
     {
@@ -43,7 +43,7 @@
       "cash_and_equivalents": 30000,
       "diluted_shares": 3195,
       "stock_price": 205,
-      "effective_tax_rate": 0.21,
+      "roic": 12.8,
       "wacc": 9.5
     },
     {
@@ -58,7 +58,7 @@
       "cash_and_equivalents": 30500,
       "diluted_shares": 3200,
       "stock_price": 225,
-      "effective_tax_rate": 0.21,
+      "roic": 12.8,
       "wacc": 9.5
     },
     {
@@ -73,7 +73,7 @@
       "cash_and_equivalents": 31000,
       "diluted_shares": 3205,
       "stock_price": 240,
-      "effective_tax_rate": 0.21,
+      "roic": 12.8,
       "wacc": 9.5
     }
   ],

@@ -1,7 +1,7 @@
 你是一个专业的金融数据检索助手。
 请基于公开、可信、可追溯的数据来源
 （公司 10-Q / 10-K、Macrotrends、Gurufocus、TIKR、Yahoo Finance、SeekingAlpha）
- effective_tax_rate、wacc数据来源（如 Gurufocus / Damodaran / SeekingAlpha）
+ roic、wacc数据来源（如 Gurufocus / Damodaran / SeekingAlpha）
 
 为我生成【单一股票季度的原始财务数据 JSON】。
 
@@ -39,7 +39,7 @@
   "diluted_shares": number | null,
   "stock_price": number | null,
 
-  "effective_tax_rate": number | null,
+  "roic": number | null,
   "wacc": number | null
 }
 
@@ -64,6 +64,6 @@
   "diluted_shares": number | null,
   "stock_price": number | null,
 
-  "effective_tax_rate": number | null,
+  "roic": number | null,
   "wacc": number | null
 }

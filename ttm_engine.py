@@ -59,25 +59,12 @@ def calc_metrics(stock: str, quarter: str) -> Dict[str, Optional[float]]:
     pb = market_cap / latest["total_equity"] if market_cap and latest["total_equity"] else None
 
     # ===== ROE =====
-    prev_equity = qs[idx-1]["total_equity"] if idx > 0 else None
+    prev_equity = qs[idx-4]["total_equity"] if idx >= 4 else None
     if ttm_net_income and latest["total_equity"] and prev_equity:
         avg_equity = (latest["total_equity"] + prev_equity) / 2
         roe = ttm_net_income / avg_equity * 100
     else:
         roe = None
-
-    # ===== ROIC =====
-    tax = latest["effective_tax_rate"]
-    if tax is not None and all(latest.get(k) is not None for k in ["total_equity", "total_debt", "cash_and_equivalents"]):
-        nopat = ttm_net_income * (1 - tax) if ttm_net_income else None
-        invested_capital = (
-                latest["total_equity"]
-                + latest["total_debt"]
-                - latest["cash_and_equivalents"]
-        )
-        roic = nopat / invested_capital * 100 if nopat and invested_capital else None
-    else:
-        roic = None
 
     # ===== 增长 =====
     yoy_q = next((q for q in qs if q["quarter"] == f"{int(quarter[:4])-1}{quarter[4:]}"), None)
@@ -101,7 +88,7 @@ def calc_metrics(stock: str, quarter: str) -> Dict[str, Optional[float]]:
         "pb": pb,
         "ps": ps,
         "roe": roe,
-        "roic": roic,
+        "roic": latest["roic"],
         "wacc": latest["wacc"],
         "revenue_yoy": revenue_yoy,
         "gross_margin": gross_margin,
