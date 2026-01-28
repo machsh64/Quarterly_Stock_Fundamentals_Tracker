@@ -1,0 +1,80 @@
+{
+  "stock": "NVDA",
+  "quarters": [
+    {
+      "quarter": "2026-Q3",
+      "revenue": 57006,
+      "gross_profit": 41849,
+      "net_income": 31910,
+      "operating_cash_flow": 23751,
+      "capex": 1636,
+      "total_equity": 118897,
+      "total_debt": 10481,
+      "cash_and_equivalents": 11486,
+      "diluted_shares": 24483,
+      "stock_price": 242.49,
+      "roic": 165.03,
+      "wacc": 17.25
+    },
+    {
+      "quarter": "2026-Q2",
+      "revenue": 46743,
+      "gross_profit": 33853,
+      "net_income": 26422,
+      "operating_cash_flow": 15365,
+      "capex": 1895,
+      "total_equity": 100131,
+      "total_debt": 10598,
+      "cash_and_equivalents": 11639,
+      "diluted_shares": 24532,
+      "stock_price": 177.87,
+      "roic": 166.05,
+      "wacc": 18.02
+    },
+    {
+      "quarter": "2026-Q1",
+      "revenue": 44062,
+      "gross_profit": 26668,
+      "net_income": 18775,
+      "operating_cash_flow": 27414,
+      "capex": 1227,
+      "total_equity": 83843,
+      "total_debt": 10285,
+      "cash_and_equivalents": 15234,
+      "diluted_shares": 24611,
+      "stock_price": 108.92,
+      "roic": 144.21,
+      "wacc": 17.5
+    },
+    {
+      "quarter": "2025-Q4",
+      "revenue": 39331,
+      "gross_profit": 28723,
+      "net_income": 22091,
+      "operating_cash_flow": 16629,
+      "capex": 1077,
+      "total_equity": 79327,
+      "total_debt": 10270,
+      "cash_and_equivalents": 8595,
+      "diluted_shares": 24705,
+      "stock_price": 120.07,
+      "roic": 174.7,
+      "wacc": 18.64
+    },
+    {
+      "quarter": "2025-Q3",
+      "revenue": 35082,
+      "gross_profit": 26156,
+      "net_income": 19309,
+      "operating_cash_flow": 17627,
+      "capex": 813,
+      "total_equity": 65899,
+      "total_debt": 10225,
+      "cash_and_equivalents": 9107,
+      "diluted_shares": 24774,
+      "stock_price": 132.76,
+      "roic": 184.48,
+      "wacc": 18.74
+    }
+  ]
+}

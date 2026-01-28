@@ -3,13 +3,18 @@ from typing import List, Dict, Optional
 
 
 STOCK = "TSLA"
-TARGET_QUARTER = "2024-Q4"
+TARGET_QUARTER = "2025-Q3"
 
+def quarter_key(q: str) -> int:
+    year, qtr = q.split("-Q")
+    return int(year) * 4 + int(qtr)
 
 def load_quarters(stock: str) -> List[Dict]:
     with open(f"financials/{stock}.json", "r", encoding="utf-8") as f:
-        return json.load(f)["quarters"]
+        data = json.load(f)["quarters"]
 
+    data.sort(key=lambda x: quarter_key(x["quarter"]))
+    return data
 
 def get_quarter_index(quarters, target):
     for i, q in enumerate(quarters):
@@ -28,6 +33,11 @@ def ttm_slice(quarters, idx):
     if idx < 3:
         return None
     return quarters[idx-3:idx+1]
+
+def find_same_quarter_last_year(quarters, quarter):
+    year, qtr = quarter.split("-Q")
+    target = f"{int(year)-1}-Q{qtr}"
+    return next((q for q in quarters if q["quarter"] == target), None)
 
 
 def calc_metrics(stock: str, quarter: str) -> Dict[str, Optional[float]]:
@@ -67,7 +77,7 @@ def calc_metrics(stock: str, quarter: str) -> Dict[str, Optional[float]]:
         roe = None
 
     # ===== 增长 =====
-    yoy_q = next((q for q in qs if q["quarter"] == f"{int(quarter[:4])-1}{quarter[4:]}"), None)
+    yoy_q = find_same_quarter_last_year(qs, quarter) #next((q for q in qs if q["quarter"] == f"{int(quarter[:4])-1}{quarter[4:]}"), None)
     if yoy_q and latest["revenue"] and yoy_q["revenue"]:
         revenue_yoy = (latest["revenue"] - yoy_q["revenue"]) / yoy_q["revenue"] * 100
     else:
