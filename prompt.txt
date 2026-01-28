@@ -18,30 +18,36 @@
 6. 不得计算 PE / ROE / ROIC / TTM / YoY / Margin 等任何派生指标
 7. 若某项数据无法从可靠来源获得，请返回 null，不得估算
 
-【季度必须包含以下字段（不得增删）】
+所有数据建议从gurufocus获取，所需要获取的字段以及来源如下
 
-{
-  "stock": "",
+| 字段                    | 	去哪找                        | 	具体位置                                     | 备注   
+|-----------------------|-----------------------------|-------------------------------------------|------|
+| revenue               | 	Income Statement           | 	Total Revenue (gurufocus: Income Statement -> Revenue)                           | 	季度值 |
+| gross_profit	         | Income Statement            | Gross Profit (gurufocus: Income Statement -> Gross Profit)                             | 季度值  |
+| net_income            | Income Statement            | Net Income (GAAP)	(gurufocus: Income Statement -> Net Income)                        | 季度值  |
+| operating_cash_flow	  | Cash Flow	                  | Net Cash Provided by Operating Activities (gurufocus: Cashflow Statement -> Cash Flow From Operations) | 季度值  |
+| capex	                | Cash Flow	                  | Capital Expenditures	(gurufocus: Cashflow Statement -> Capital Expenditure)                     | 取正值  |
+| total_equity	         | Balance Sheet	              | Total Shareholders' Equity	(gurufocus: Balance Sheet -> Total Equity)               | 期末   |
+| total_debt	           | Balance Sheet	              | Short + Long-term Debt	(gurufocus: Balance Sheet -> Short + Long-term Debt)                   | 合并   |
+| cash_and_equivalents	 | Balance Sheet	              | Cash And Cash Equivalents	(gurufocus: Balance Sheet -> Ending Cash Position)                  | 期末   |
+| diluted_shares        | Income Statement / Footnote | Diluted Weighted Average Shares (gurufocus: Income Statement -> Shares Outstanding(Diluted Average))  | 季度   |
 
-  "quarter": "YYYY-QX",
 
-  "revenue": number | null,
-  "gross_profit": number | null,
-  "net_income": number | null,
+| 字段           | 去哪找 | 精确口径 | 要取的值  |   
+|--------------| --- | --- |----------|
+| stock_price  | Yahoo / Macrotrends / Gurufocus / TIKR | Historical Prices | 对应季度最后一个交易日 Close |
 
-  "operating_cash_flow": number | null,
-  "capex": number | null,
+示例
+- 2024-Q4 → 2024-12-31 → Close
 
-  "total_equity": number | null,
-  "total_debt": number | null,
-  "cash_and_equivalents": number | null,
+第三方估算工具（财报里不存在的数据）
 
-  "diluted_shares": number | null,
-  "stock_price": number | null,
+源：Gurufocus / Damodaran / SeekingAlpha
 
-  "roic": number | null,
-  "wacc": number | null
-}
+| 字段	| 去哪找	| 说明 |
+|------|---------|------|
+| roic | Gurufocus (Ratios -> ROIC%) / Damodaran | 	市场假设值 |
+| wacc | Gurufocus  (Ratios -> WACC%) / Damodaran | 	市场假设值 |
 
 【最终输出格式（仅 JSON，不得输出解释）】
 
