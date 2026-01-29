@@ -75,6 +75,54 @@
       "stock_price": 261.63,
       "roic": 12.1,
       "wacc": 14.82
+    },
+    {
+      "quarter": "2024-Q2",
+      "revenue": 25500,
+      "gross_profit": 4578,
+      "net_income": 1400,
+      "operating_cash_flow": 3612,
+      "capex": 2272,
+      "total_equity": 67191,
+      "total_debt": 7696,
+      "debt_assumption": "long_term_only",
+      "cash_and_equivalents": 16139,
+      "diluted_shares": 3481,
+      "stock_price": 197.88,
+      "roic": 1.82,
+      "wacc": 15
+    },
+    {
+      "quarter": "2024-Q1",
+      "revenue": 21301,
+      "gross_profit": 3696,
+      "net_income": 1432,
+      "operating_cash_flow": 242,
+      "capex": 2777,
+      "total_equity": 65107,
+      "total_debt": 5360,
+      "debt_assumption": "long_term_only",
+      "cash_and_equivalents": 16863,
+      "diluted_shares": 3484,
+      "stock_price": 175.79,
+      "roic": 7.24,
+      "wacc": 15.3
+    },
+    {
+      "quarter": "2023-Q4",
+      "revenue": 25167,
+      "gross_profit": 4438,
+      "net_income": 7925,
+      "operating_cash_flow": 4370,
+      "capex": 2777,
+      "total_equity": 63367,
+      "total_debt": 5230,
+      "debt_assumption": "long_term_only",
+      "cash_and_equivalents": 248.48,
+      "diluted_shares": 3485,
+      "stock_price": 16398,
+      "roic": 12.10,
+      "wacc": 15
     }
   ]
 }

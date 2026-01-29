@@ -20,19 +20,20 @@
 
 ## 数据源头
 ### 一、【公司财报（10-Q / 10-K）里一定能找到的字段】
-[yahoo finance](https://finance.yahoo.com/quote/NVDA/financials/)
+- 最近5个季度数据：[yahoo finance](https://finance.yahoo.com/quote/NVDA/financials/)
+- 大量历史季度数据：[macrotrends](https://www.macrotrends.net/stocks/charts/NVDA/nvidia/income-statement?freq=Q) (推荐)
 
-| 字段                    | 	去哪找                        | 	具体位置                                                                                               | 备注   
-|-----------------------|-----------------------------|-----------------------------------------------------------------------------------------------------|------|
-| revenue               | 	Income Statement           | 	Total Revenue (finance_yahoo: Income Statement -> Total Revenue)                                   | 	季度值 |
-| gross_profit	         | Income Statement            | Gross Profit (finance_yahoo: Income Statement -> Gross Profit)                                      | 季度值  |
-| net_income            | Income Statement            | Net Income (GAAP)	(finance_yahoo: Income Statement -> Net Income)                                   | 季度值  |
-| operating_cash_flow	  | Cash Flow	                  | Net Cash Provided by Operating Activities (finance_yahoo: Cash Flow -> Operating Cash Flow )        | 季度值  |
-| capex	                | Cash Flow	                  | Capital Expenditures	(finance_yahoo: Cash Flow -> Capital Expenditure)                              | 取正值  |
-| total_equity	         | Balance Sheet	              | Total Shareholders' Equity	(finance_yahoo : Balance Sheet -> Total Equity Gross Minority Interest ) | 期末   |
-| total_debt	           | Balance Sheet	              | Short + Long-term Debt	(finance_yahoo : Balance Sheet -> Total Debt )                               | 合并   |
-| cash_and_equivalents	 | Balance Sheet	              | Cash And Cash Equivalents	(finance_yahoo : Cash Flow -> End Cash Position )                         | 期末   |
-| diluted_shares        | Income Statement / Footnote | Diluted Weighted Average Shares (finance_yahoo : Income Statement -> Diluted Average Shares         | 季度   |
+| 字段                    | 	去哪找                        | 	具体位置                                                                                                           | 备注   
+|-----------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| revenue               | 	Income Statement           | 	Total Revenue (macrotrends\finance_yahoo: Income Statement -> Total Revenue)                                   | 	季度值 |
+| gross_profit	         | Income Statement            | Gross Profit (macrotrends\finance_yahoo: Income Statement -> Gross Profit)                                      | 季度值  |
+| net_income            | Income Statement            | Net Income (GAAP)	(macrotrends\finance_yahoo: Income Statement -> Net Income)                                   | 季度值  |
+| operating_cash_flow	  | Cash Flow	                  | Net Cash Provided by Operating Activities (macrotrends\finance_yahoo: Cash Flow -> Operating Cash Flow )        | 季度值  |
+| capex	                | Cash Flow	                  | Capital Expenditures	(macrotrends\finance_yahoo: Cash Flow -> Capital Expenditure)                              | 取正值  |
+| total_equity	         | Balance Sheet	              | Total Shareholders' Equity	(macrotrends\finance_yahoo : Balance Sheet -> Total Equity Gross Minority Interest ) | 期末   |
+| total_debt	           | Balance Sheet	              | Short + Long-term Debt	(macrotrends\finance_yahoo : Balance Sheet -> Total Debt )                               | 合并   |
+| cash_and_equivalents	 | Cash Flow 	                 | Cash And Cash Equivalents	(finance_yahoo : Cash Flow -> End Cash Position )                                     | 期末   |
+| diluted_shares        | Income Statement / Footnote | Diluted Weighted Average Shares (macrotrends\finance_yahoo : Income Statement -> Diluted Average Shares         | 季度   |
 
 
 ### 二、【市场数据软件中获取】
