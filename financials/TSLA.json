@@ -2,6 +2,21 @@
   "stock": "TSLA",
   "quarters": [
     {
+      "quarter": "2025-Q4",
+      "revenue": 24901,
+      "gross_profit": 5009,
+      "net_income": 840,
+      "operating_cash_flow": 3813,
+      "capex": 2393,
+      "total_equity": 82865,
+      "total_debt": 14719,
+      "cash_and_equivalents": 17616,
+      "diluted_shares": 3539,
+      "stock_price": 430.41,
+      "roic": 5.59,
+      "wacc": 10.12
+    },
+    {
       "quarter": "2025-Q3",
       "revenue": 28095,
       "gross_profit": 5054,

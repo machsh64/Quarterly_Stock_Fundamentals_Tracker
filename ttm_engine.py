@@ -3,7 +3,7 @@ from typing import List, Dict, Optional
 
 
 STOCK = "TSLA"
-TARGET_QUARTER = "2025-Q3"
+TARGET_QUARTER = "2025-Q4"
 
 def quarter_key(q: str) -> int:
     year, qtr = q.split("-Q")
